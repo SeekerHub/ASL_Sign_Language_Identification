@@ -15,9 +15,9 @@ The network was trained on this kaggle dataset of [ASL Alphabet](https://www.kag
 So, as to train the model for better real-world scenarios, we have augmented the data using brightness shift (ranging in `20%` darker lighting conditions) and zoom shift (zooming out up to `120%`).
 
 ### 2.3 - Transfer Learning 
-For the initial the model was build and trained the system on two models ResNet50 and Inception_V3
+For the initial the model was build and trained the system on two models InceptionResNetV2 and Inception_V3
 
-ResNet - The network uses [ResNet](https://arxiv.org/pdf/1512.03385.pdf) as the base model. We  create our own set of Fully Connected layers and add it after the resnet network so as to conform the neural network for our application (consists of `2` Fully Connected layers, one consisting of `1024` ReLu units and the other of `29` Softmax units for the prediction of `29` classes). The model is then trained on the set of new images for the ASL Application.
+InceptionResNetV2 - The network uses [InceptionResnetV2](https://arxiv.org/pdf/1512.00567.pdf) as the base model. The first `550` (out of `780`) layers of the model  are locked, leaving around `230` for training and also remove the Fully Connected layers at the top of InceptionResnet network. We then create our own set of Fully Connected layers and add it after the inception network so as to conform the neural network for our application (consists of `2` Fully Connected layers, one consisting of `1024` ReLu units and the other of `29` Softmax units for the prediction of `29` classes). The model is then trained on the set of new images for the ASL Application.
 #
 InceptionV3 - The network uses [Inception v3](https://arxiv.org/pdf/1512.00567.pdf) as the base model. The first `248` (out of `311`) layers of the model (i.e. up to the third last inception block) are locked, leaving only the last 2 inception blocks for training and also remove the Fully Connected layers at the top of Inception network. We then create our own set of Fully Connected layers and add it after the inception network so as to conform the neural network for our application (consists of `2` Fully Connected layers, one consisting of `1024` ReLu units and the other of `29` Softmax units for the prediction of `29` classes). The model is then trained on the set of new images for the ASL Application.
 
