@@ -4,7 +4,7 @@
 American Sign Language (ASL) is a complete, natural language that is expressed using the movement of hands and face. It uses hand and sign, symbols to communicate with the other person..However, not everyone knows about signs and gestures used in the sign language. With the advent of [Artificial Neural Networks]and [Deep Learning]. Utilizing this, here we have an application that uses a deep learning model trained on the ASL Dataset to predict the sign from the sign language given an input image or frame from a video feed. You can learn more about the American Sign Language over [here](https://www.nidcd.nih.gov/health/american-sign-language) [National Institute on Deafness and Other Communication Disorders (NIDCD) website].
 
 #### Alphabet signs in American Sign Language are shown below:
-![American Sign Language - Signs](/images/NIDCD-ASL-hands-2014.jpg)
+![American Sign Language - Signs](/Dataset/american_sign_language.PNG)
 
 ## 2 - Approach
 We will use various techniques to build the model starting from feature Engineering, Data Augmentation, Understand the state of art models like (ResNet50, InceptionV2) and using its properties to build the model and making useful predictions.
