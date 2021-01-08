@@ -7,7 +7,7 @@ American Sign Language (ASL) is a complete, natural language that is expressed u
 ![American Sign Language - Signs](/Dataset/american_sign_language.PNG)
 
 ## 2 - Approach
-We will use various techniques to build the model starting from feature Engineering, Data Augmentation, Understand the state of art models like (ResNet50, InceptionV2) and using its properties to build the model and making useful predictions.
+We will use various techniques to build the model starting from feature Engineering, Data Augmentation, Understand the state of art models like (InceptionResNetV2, InceptionV3) and using its properties to build the model and making useful predictions.
 ### 2.1 - Dataset
 The network was trained on this kaggle dataset of [ASL Alphabet](https://www.kaggle.com/grassknoted/asl-alphabet). The dataset contains `87,000` images which are 200x200 pixels, divided into `29` classes (`26` English Alphabets and `3` additional signs of SPACE, DELETE and NOTHING). 
 
